@@ -4,6 +4,7 @@
     <HeartClicker />
     <router-view/>
   </div>
+
 </template>
 
 <script>
