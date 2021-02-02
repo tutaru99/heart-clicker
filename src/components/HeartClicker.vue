@@ -11,7 +11,7 @@
       :width="particlesWidth"
       :height="particlesHeight"
     ></canvas>
-    <p>{{ globalClicks }}</p>
+    <h1>{{ globalClicks }}</h1>
   </div>
 </template>
 
@@ -153,5 +153,8 @@ canvas#particles {
   position: absolute;
   left: 0;
   z-index: -1;
+}
+h1 {
+    color: green;
 }
 </style>
