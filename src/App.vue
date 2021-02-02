@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <img alt="Vue logo" src="@/assets/logo.png">
+    <img id="vue" alt="Vue logo" src="@/assets/logo.png">
     <HeartClicker />
     <router-view/>
   </div>
@@ -39,5 +39,8 @@ export default {
       color: #42b983;
     }
   }
+}
+*{
+overflow: hidden;
 }
 </style>

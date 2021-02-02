@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="wrapper">
     <canvas
       id="heart"
       :width="width"
@@ -11,7 +11,8 @@
       :width="particlesWidth"
       :height="particlesHeight"
     ></canvas>
-    <h1>{{ globalClicks }}</h1>
+    <h1>{{ globalClicks }} Clicks</h1>
+    <h2>Party Hard !</h2>
   </div>
 </template>
 
@@ -138,23 +139,28 @@ export default {
 <style lang="scss" scoped>
 canvas#heart {
   cursor: pointer;
-  width: 50px;
+  width: 80px;
   transition: width 0.3s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:hover {
-    width: 55px;
+    width: 85px;
   }
   &:active {
-    width: 50px;
+    width: 80px;
   }
 }
 canvas#particles {
   position: absolute;
-  left: 0;
+  left: 0px;
+  top: 0px;
   z-index: -1;
 }
 h1 {
-    color: green;
+    color: rgb(22, 194, 22);
 }
+#wrapper{
+ margin-top: 6%;
+}
+
 </style>
